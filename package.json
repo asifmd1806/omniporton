@@ -1,0 +1,59 @@
+{
+  "name": "omniporton",
+  "version": "0.0.1",
+  "description": "Omniporton - Universal AI Particle Engine - Universal LLM Connection Layer",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs --out-dir dist --clean",
+    "test": "npm run test:integration",
+    "test:integration": "tsx tests/integration/test-openai-provider.ts && tsx tests/integration/test-claude-provider.ts && tsx tests/integration/test-gemini-provider.ts && tsx tests/integration/test-local-providers.ts && tsx tests/integration/test-other-providers.ts",
+    "test:openai": "tsx tests/integration/test-openai-provider.ts",
+    "test:claude": "tsx tests/integration/test-claude-provider.ts",
+    "test:gemini": "tsx tests/integration/test-gemini-provider.ts",
+    "test:local": "tsx tests/integration/test-local-providers.ts",
+    "test:other": "tsx tests/integration/test-other-providers.ts",
+    "test:manual": "echo 'Run manual tests individually from tests/manual/ directory'"
+  },
+  "keywords": [
+    "ai",
+    "chat",
+    "llm",
+    "openai",
+    "claude",
+    "gemini",
+    "agents",
+    "tools",
+    "mcp",
+    "typescript"
+  ],
+  "author": "Omniporton Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omniporton/omniporton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omniporton/omniporton/issues"
+  },
+  "homepage": "https://github.com/omniporton/omniporton#readme",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.0.10",
+    "tsup": "^8.5.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@types/uuid": "^10.0.0",
+    "dotenv": "^17.2.0",
+    "handlebars": "^4.7.8",
+    "js-yaml": "^4.1.0",
+    "node-llama-cpp": "^3.1.1",
+    "uuid": "^11.1.0",
+    "zod": "^3.25.74",
+    "zod-to-json-schema": "^3.24.6"
+  }
+}
