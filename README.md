@@ -2,6 +2,10 @@
 
 A TypeScript library for building AI applications with local models, multi-modal support, and session management optimized for frontend applications.
 
+## 📚 Documentation
+
+**[View Full Documentation](https://omniporton.mintlify.app/)**
+
 ## Provider Categories
 
 ### Local Providers
@@ -521,36 +525,22 @@ const customerServiceSession = createChatSession({
 });
 ```
 
-## Examples
+## ✨ Key Features
 
-### Basic Session Management
-```bash
-npx ts-node examples/session-management.ts
-```
+- **🔒 Privacy-First**: Local inference with node-llama-cpp and Ollama
+- **🌐 Multi-Provider**: Support for OpenAI, Claude, Gemini, Mistral, Groq
+- **📱 Multi-Modal**: Text, images, documents, audio, and video support
+- **💾 Session Management**: Complete conversation tracking and persistence
+- **⚡ Streaming**: Real-time response delivery
+- **🎯 Frontend Optimized**: Built for React, Vue, and modern web apps
+- **🔧 Developer Experience**: TypeScript support with comprehensive examples
 
-### Provider-Specific Usage
-```bash
-npx ts-node examples/providers/openai/chat-session.ts
-npx ts-node examples/providers/claude/chat-session.ts
-npx ts-node examples/providers/llama/chat-session.ts
-```
+## 📖 Quick Links
 
-### Real-World Applications
-```bash
-npx ts-node examples/medical-diagnosis.ts
-npx ts-node examples/financial-analysis.ts
-npx ts-node examples/legal-document-review.ts
-```
-
-## Session Management Features
-
-- **Message History**: Complete conversation tracking
-- **State Persistence**: Save and restore sessions
-- **Multi-Modal Support**: Handle text, images, documents
-- **Streaming**: Real-time response delivery
-- **Performance Metrics**: Track usage and performance
-- **Error Handling**: Robust error management
-- **Provider Flexibility**: Support for multiple AI providers
+- [**Getting Started**](https://omniporton.mintlify.app/quickstart) - Installation and setup
+- [**Providers Guide**](https://omniporton.mintlify.app/providers/overview) - All supported AI providers
+- [**Examples**](https://omniporton.mintlify.app/examples) - Real-world usage examples
+- [**API Reference**](https://omniporton.mintlify.app/core/sessions) - Complete API documentation
 
 ## License
 
