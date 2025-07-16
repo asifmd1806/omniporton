@@ -32,12 +32,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/omniporton/omniporton.git"
+    "url": "https://github.com/asifmd1806/omniporton.git"
   },
   "bugs": {
-    "url": "https://github.com/omniporton/omniporton/issues"
+    "url": "https://github.com/asifmd1806/omniporton/issues"
   },
-  "homepage": "https://github.com/omniporton/omniporton#readme",
+  "homepage": "https://github.com/asifmd1806/omniporton#readme",
   "type": "commonjs",
   "devDependencies": {
     "@types/js-yaml": "^4.0.9",
