@@ -1,5 +1,5 @@
 /**
- * Omniporton: Universal AI Particle Engine - High-level library for local and cloud LLMs.
+ * Omniporton: unified interface for interacting with LLMs - High-level library for local and cloud LLMs.
  *
  * @module omniporton
  */

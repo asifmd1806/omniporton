@@ -13,7 +13,10 @@ const PROVIDER_PRICING: Record<string, Record<string, ProviderPricing>> = {
     'gpt-4-turbo': { input: 0.01, output: 0.03 },
     'gpt-4o': { input: 0.005, output: 0.015 },
     'gpt-4o-mini': { input: 0.00015, output: 0.0006 },
-    'gpt-3.5-turbo': { input: 0.0015, output: 0.002 }
+    'gpt-3.5-turbo': { input: 0.0015, output: 0.002 },
+    'o1': { input: 0.015, output: 0.06 },
+    'o1-mini': { input: 0.003, output: 0.012 },
+    'o1-preview': { input: 0.015, output: 0.06 }
   },
   claude: {
     'claude-3-opus-20240229': { input: 0.015, output: 0.075 },
@@ -45,7 +48,7 @@ const DEFAULT_PRICING: ProviderPricing = {
 };
 
 // Local providers (no cost)
-const LOCAL_PROVIDERS = new Set(['llama.rn', 'ollama']);
+const LOCAL_PROVIDERS = new Set(['node-llama-cpp', 'ollama']);
 
 /**
  * Simple cost estimation for observability
